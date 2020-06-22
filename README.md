@@ -37,12 +37,11 @@ $ git clone https://github.com/RobertoMantas/MODIS_analysis.git
 ```
 
 3. In the new created folder, make sure that there is a file called “links.txt” with all the links to download. For this use the following command: `$ nano links.txt` And paste the links in the new text file. Then press ctrl + x followed by “y” answering yes to save the file.
-4. Run the following command to download all the wanted files listed in the “links.txt” file. If the file has a different name as e.g.”7361544994-download.txt”, change the name at the end. 
+4. Run the following command to download all the wanted files listed in the “links.txt” file. If the file has a different name as e.g.”7361544994-download.txt”, change the name at the end. (Change "username" and "password" for you NASA MODIS credentials.)
 ```
 $ wget --user "username" --password "password" -i links.txt
 ``` 
-Change "username" and "password" for you NASA MODIS credentials. Now, in the current folder you should have all the files. 
-5. The next step is to have a text file called “files.txt” in which it lists all the downloaded files to study. We can achieve this with the following command: `$ ls MOD11A1* > files.txt` Being “MOD11A1” the matching text at the beginning of all the files in which we are interested. Make sure that the rest of the files don’t start with this name. 
+5. Now, in the current folder you should have all the files. The next step is to have a text file called “files.txt” in which it lists all the downloaded files to study. We can achieve this with the following command: `$ ls MOD11A1* > files.txt` Being “MOD11A1” the matching text at the beginning of all the files in which we are interested. Make sure that the rest of the files don’t start with this name. 
 6. Activate the python environment where we are going to work with the following command: `$ source activate mygdalenv2` (You may have done this alredy in a previous step if you have followed the installation)
 To make sure that the command worked properly, now you should see (mygdalenv2) at the beginning. eg. “(mygdalenv2) username@lancelot:/data/no_backup/roberto/shaktiman_project” 
 7. We are going to create two folders in which we will have the different layers we want to extract. With the commands:
