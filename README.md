@@ -5,7 +5,7 @@ In this repository I explain how to download MODIS data from a text file, make a
 
 `MODIS_Analysis` requires the following packages for installation:
 
-1. `python2.7 or higher` (`$ sudo apt-get install python3.6`)
+1. `python2.7 or higher` (`$ sudo apt-get install python2.7`)
 
 2. `GDAL` Python package
 
