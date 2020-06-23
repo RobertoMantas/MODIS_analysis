@@ -16,10 +16,15 @@ In this repository I explain how to download MODIS data from a text file, make a
 # Friendly tip
 
 My advice for successfully installing GDAL and pymodis at the same time is doing the following:
-Download miniconda from https://docs.conda.io/en/latest/miniconda.html
-Install miniconda with: `$ bash Miniconda3-latest-Linux-x86_64.sh`.
-Create conda environment installing GDAL directly: `$ conda create -n MODIS_analysis gdal python=2.7`.
-Activate the environment you just created: `$ source activate MODIS_analysis`.
+
+1. Download miniconda from https://docs.conda.io/en/latest/miniconda.html
+
+2. Install miniconda with: `$ bash Miniconda3-latest-Linux-x86_64.sh`.
+
+3. Create conda environment installing GDAL directly: `$ conda create -n MODIS_analysis gdal python=2.7`.
+
+4. Activate the environment you just created: `$ source activate MODIS_analysis`.
+
 Now you can install with pip any library (`$ pip install pyModis`), and they will install in the same python environment as the conda package.
 
 Back to work, let's continue!! 
