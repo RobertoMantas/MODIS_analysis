@@ -32,11 +32,10 @@ Back to work, let's continue!!
 # Run example
 
 ### Let's assume everything is installed correctly and working:
-If you have access to the cluster "Lancelot" (at the Luleå University of Technology), you can literally follow this example as I have already done all the previous installations.
+If you have access to the cluster "Lancelot" (at the Luleå University of Technology), you can follow this example as I have already done all the previous installations.
 
-1. Go to the folder you would like to do the run: e.g. `$ cd /data/no_backup/roberto/shaktiman_project/`
-Here, create a folder with any name with the following command: `$ mkdir foldername` (Change “foldername” with the name you want)
-Now go into the folder with: `$ cd foldername` (Change “foldername” with the name you chose before)
+1. Go to the folder you would like to do the run: e.g. `$ cd /data/no_backup/shaktiman/`
+Here, create a folder with any name with the following command: `$ mkdir foldername` (Change “foldername” with the name you want). Now go into the folder with: `$ cd foldername` (Change “foldername” with the name you chose before)
 
 2. Make sure you clone the repository:
 
@@ -44,7 +43,7 @@ Now go into the folder with: `$ cd foldername` (Change “foldername” with the
 $ git clone https://github.com/RobertoMantas/MODIS_analysis.git
 ```
 
-3. In the new created folder, make sure that there is a file called “links.txt” with all the links to download. For this use the following command: `$ nano links.txt` And paste the links in the new text file. Then press ctrl + x followed by “y” answering yes to save the file.
+3. Change directory to the new created folder "MODIS_Analysis", make sure that there is a file called “links.txt” with all the links to download. For this use the following command: `$ nano links.txt` And paste the links in the new text file. Then press ctrl + x followed by “y” answering yes to save the file.
 4. Run the following command to download all the wanted files listed in the “links.txt” file. If the file has a different name as e.g.”7361544994-download.txt”, change the name at the end. (Change "username" and "password" for you NASA MODIS credentials.)
 ```
 $ wget --user "username" --password "password" -i links.txt
