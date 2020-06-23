@@ -43,13 +43,13 @@ Here, create a folder with any name with the following command: `$ mkdir foldern
 $ git clone https://github.com/RobertoMantas/MODIS_analysis.git
 ```
 
-3. Change directory to the new created folder "MODIS_Analysis", make sure that there is a file called “links.txt” with all the links to download. For this use the following command: `$ nano links.txt` And paste the links in the new text file. Then press ctrl + x followed by “y” answering yes to save the file.
-4. Run the following command to download all the wanted files listed in the “links.txt” file. If the file has a different name as e.g.”7361544994-download.txt”, change the name at the end. (Change "username" and "password" for you NASA MODIS credentials.)
+3. Change directory to the new created folder "MODIS_Analysis", we need a file called “links.txt” which contains all the links to download. For this use the following command: `$ nano links.txt` and paste the links in the new text file. Then press ctrl + x followed by “y” answering yes to save the file and press enter.
+4. Run the following command to download all the wanted files listed in the “links.txt” file. If the file has a different name as e.g.”7361544994-download.txt”, change the name at the end of the command. (Change "username" and "password" for you NASA MODIS credentials). To leave it working in the background use the command screen.
 ```
 $ wget --user "username" --password "password" -i links.txt
 ``` 
 5. Now, in the current folder you should have all the files. The next step is to have a text file called “files.txt” in which it lists all the downloaded files to study. We can achieve this with the following command: `$ ls *.hdf > files.txt`. It is crucial that all your files to study match at the end with the extension ".hdf". Make sure that the rest of the files don’t end with this extension. 
-6. Activate the python environment where we are going to work with the following command: `$ source activate mygdalenv2` (You may have done this alredy in a previous step if you have followed the installation)
+6. Activate the python environment where we are going to work with the following command: `$ conda activate mygdalenv2` (You may have done this alredy in a previous step if you have followed the installation)
 To make sure that the command worked properly, now you should see (mygdalenv2) at the beginning. eg. “(mygdalenv2) username@lancelot:/data/no_backup/roberto/directory” 
 7. Finally, the last step would be to run the main script:
 ```
