@@ -19,13 +19,15 @@ My advice for successfully installing GDAL and pymodis at the same time is doing
 
 1. Download miniconda from https://docs.conda.io/en/latest/miniconda.html
 
-2. Install miniconda with: `$ bash Miniconda3-latest-Linux-x86_64.sh`.
+2. Install miniconda with: `$ bash Miniconda2-latest-Linux-x86_64.sh`.
 
 3. Create conda environment installing GDAL directly: `$ conda create -n MODIS_analysis gdal python=2.7`.
 
-4. Activate the environment you just created: `$ source activate MODIS_analysis`.
+4. Activate the environment you just created: `$ conda activate MODIS_analysis`.
 
-Now you can install with pip any library (`$ pip install pyModis`), and they will install in the same python environment as the conda package.
+5. `$ pip install pyModis`
+
+Now you can install with pip any other library , and they will install in the same python environment as the conda package.
 
 Back to work, let's continue!! 
 
@@ -49,11 +51,11 @@ $ git clone https://github.com/RobertoMantas/MODIS_analysis.git
 $ wget --user "username" --password "password" -i links.txt
 ``` 
 5. Now, in the current folder you should have all the files. The next step is to have a text file called “files.txt” in which it lists all the downloaded files to study. We can achieve this with the following command: `$ ls *.hdf > files.txt`. It is crucial that all your files to study match at the end with the extension ".hdf". Make sure that the rest of the files don’t end with this extension. 
-6. Activate the python environment where we are going to work with the following command: `$ conda activate mygdalenv2` (You may have done this alredy in a previous step if you have followed the installation)
+6. Activate the python environment where we are going to work with the following command: `$ conda activate MODIS_analysis` (You may have done this alredy in a previous step if you have followed the installation)
 To make sure that the command worked properly, now you should see (mygdalenv2) at the beginning. eg. “(mygdalenv2) username@lancelot:/data/no_backup/roberto/directory” 
 7. Finally, the last step would be to run the main script:
 ```
-$ python modis_operation.py
+$ python2.7 modis_operation.py
 ```
 In the folder Layer1 and Layer5, you will find all the files mosaic with the termination “.tif” compatible to open with any standard visualiser (QGIS, preview, ArcGIS…) 
 
