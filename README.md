@@ -51,8 +51,7 @@ $ git clone https://github.com/RobertoMantas/MODIS_analysis.git
 $ wget --user "username" --password "password" -i links.txt
 ``` 
 5. Now, in the current folder you should have all the files. The next step is to have a text file called “files.txt” in which it lists all the downloaded files to study. We can achieve this with the following command: `$ ls *.hdf > files.txt`. It is crucial that all your files to study match at the end with the extension ".hdf". Make sure that the rest of the files don’t end with this extension. 
-6. Activate the python environment where we are going to work with the following command: `$ conda activate MODIS_analysis` (You may have done this alredy in a previous step if you have followed the installation)
-To make sure that the command worked properly, now you should see (mygdalenv2) at the beginning. eg. “(mygdalenv2) username@lancelot:/data/no_backup/roberto/directory” 
+6. Activate the python environment where we are going to work with the following command: `$ conda activate MODIS_analysis` (You may have done this alredy in a previous step if you have followed the installation). To make sure that the command worked properly, now you should see (mygdalenv2) at the beginning. eg. “(MODIS_analysis) username@lancelot:/data/no_backup/roberto/directory” 
 7. Finally, the last step would be to run the main script:
 ```
 $ python2.7 modis_operation.py
