@@ -16,7 +16,7 @@ def modis_operation(list_folder, source, path):
 
     for name in list_folder:
         os.system("gdalwarp -co COMPRESS=DEFLATE -dstalpha -cutline alla_lan.shp -crop_to_cutline " + path + mosaicName + name + "_.tif "+ path + clipName + name+".tif")
-    os.system("rm " + path + "/Mosaic*")
+    #os.system("rm " + path + "/Mosaic*")
 
 modis_operation([], os.listdir("./Layer1"), os.path.dirname(os.path.realpath(__file__))+"/Layer1/")
 modis_operation([], os.listdir("./Layer5"), os.path.dirname(os.path.realpath(__file__))+"/Layer5/")
