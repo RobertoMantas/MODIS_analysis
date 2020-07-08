@@ -1,6 +1,7 @@
 import os
 import shutil
 
+#Create directory if necesary.
 def createFolder(directory):
     try:
         if not os.path.exists(directory):
@@ -8,6 +9,7 @@ def createFolder(directory):
     except OSError:
         print('Error: Creating directory. ' + directory)
 
+#Function reading files and doing operations.
 def modis_operation(list_folder, source):
     path = os.path.dirname(os.path.realpath(__file__))
     for files in source:
