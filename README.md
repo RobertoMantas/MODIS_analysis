@@ -1,5 +1,5 @@
 # MODIS Analysis
-In this repository I explain how to download MODIS data from a text file, make a reprojection and mosaic them. This can be used either in Linux or Mac. I am happy to help if there is any issue or misunderstanding in the explanation. Open a ticket issue if you need any help. 
+In this repository, I explain how to download MODIS data from a text file, make a reprojection and mosaic them. This can be used either in Linux or Mac. I am happy to help if there is any issue or misunderstanding in the explanation. Open a ticket issue if you need any help. 
 
 # Prerequisites and Installation
 
